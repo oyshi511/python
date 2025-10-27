@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Python</title>
+</head>
+<body>
+    <div>
+        <h2>🌀 What is a Loop?</h2>
+        <p>A loop lets your program repeat actions automatically — instead of writing the same line again and again.</p>
+        <p><b>🔹 Types of Loops in Python</b></p>
+        <p>There are mainly two types:</p>
+        <ul>
+            <li>for loop – repeats a specific number of times.</li>
+            <li>while loop – repeats as long as a condition is true.</li>
+        </ul>
+
+        <h4>For loop</h4>
+        <p>The range() function helps us decide how many times to repeat.</p>
+        <p>Example: 
+            for i in range(5):
+            print("I love Python")</p>
+            <p><b>range(5)</b> means it will count from 0 to 4 (that’s 5 times total). <b>i</b> is just a variable that changes every loop: 0, 1, 2, 3, 4. </p>
+    </div>
+    <div>
+        <h3>While loop</h3>
+        <p>A while loop keeps running as long as a condition is true.</p>
+        <p>Example: count = 1
+        while count <= 5:
+            print("Hello, Python!")
+            count = count + 1</p>
+            <p>How it works?</p>
+            <ol>
+                <li>It starts with count = 1</li>
+                <li>Checks the condition count <= 5
+                
+                </li>
+                <li>Prints the line</li>
+                <li>Adds 1 to count</li>
+                <li>Repeats until count becomes 6 → condition is false, loop stops</li>
+            </ol>
+            <strong>If you forget to update the variable (like count = count + 1),
+            the loop will never stop — it becomes an infinite loop.</strong>
+    </div>
+    <div>
+        <h2>List</h2>
+        <p>A list is a way to store multiple values in a single variable.
+        It’s like a box that holds many items together.</p>
+        <p>Example: fruits = ["apple", "banana", "cherry"]
+        print(fruits) 
+    <br>
+Output: ['apple', 'banana', 'cherry']</p>
+<b>Each item inside the brackets [ ] is separated by a comma.</b>
+<h4>🔹 Accessing items from a list</h4>
+<p>You can pick items by index number — counting starts at 0!</p>
+<p>print(fruits[0])   # apple
+print(fruits[1])   # banana
+print(fruits[2])   # cherry</p>
+<h4>🔹 Changing or adding items</h4>
+<p>fruits[1] = "mango"        # change “banana” to “mango”
+fruits.append("orange")    # add “orange” to the end
+print(fruits)
+<br>
+Output: ['apple', 'mango', 'cherry', 'orange']
+</p>
+<h3> Using loops with lists</h3>
+<p>You can loop through all items automatically!</p>
+    </div>
+</body>
+</html>

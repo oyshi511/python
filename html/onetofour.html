@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Lesson 1 | Introduction to Python</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>🐍 Python Lesson 1</h1>
+        <p class="subtitle">Introduction to Python Programming</p>
+    </header>
+
+    <main>
+        <!-- What is Python -->
+        <section class="card">
+            <h2>💡 What Is Python?</h2>
+            <p>Imagine you want to talk to your computer and tell it things like:</p>
+            <blockquote>“Hey, add these numbers” or “Show me my favorite color.”</blockquote>
+            <p>But computers don’t understand Bangla or English — they understand code.  
+                <strong>Python</strong> is a programming language that helps you talk to your computer in simple,
+                English-like commands.
+            </p>
+        </section>
+
+        <!-- Why Learn Python -->
+        <section class="card">
+            <h2>🧠 Why Do People Learn Python?</h2>
+            <h4>Because Python is:</h4>
+            <ul>
+                <li>🧩 <b>Easy to learn</b> — perfect for beginners</li>
+                <li>🌍 <b>Used everywhere</b> — websites, apps, AI, data, and games</li>
+                <li>⚡ <b>Powerful</b> — used by Google, NASA, Netflix, and more</li>
+                <li>💼 <b>Good career choice</b> — Python developers earn a lot</li>
+            </ul>
+        </section>
+
+        <!-- How it Works -->
+        <section class="card">
+            <h2>⚙️ How Python Works</h2>
+            <ul>
+                <li><code>print()</code> — tells Python to show something on the screen</li>
+                <li>Whatever you put inside quotes (<code>""</code>) is text (called a <b>string</b>)</li>
+                <li>Python then shows that text as output</li>
+            </ul>
+        </section>
+
+        <!-- Variables -->
+        <section class="card">
+            <h2>🧠 What Are Variables?</h2>
+            <p>A variable is like a small box with a name that stores information.</p>
+            <ul>
+                <li><code>name = "Oyshi"</code> → text (string)</li>
+                <li><code>age = 18</code> → number (integer)</li>
+            </ul>
+
+            <h4>🧩 Rule: How to Create a Variable</h4>
+            <pre><code>variable_name = value
+
+city = "Barisal"
+study_hours = 14
+goal = "MIT Scholarship"</code></pre>
+
+            <p>You can use variables inside <code>print()</code>.  
+                Python automatically adds spaces when you separate things with commas.
+            </p>
+
+            <table>
+                <caption>🔤 Types of Data in Python</caption>
+                <tr>
+                    <th>Type</th>
+                    <th>Example</th>
+                    <th>Meaning</th>
+                </tr>
+                <tr>
+                    <td>String (<code>str</code>)</td>
+                    <td>"Hello"</td>
+                    <td>Text (inside quotes)</td>
+                </tr>
+                <tr>
+                    <td>Integer (<code>int</code>)</td>
+                    <td>18</td>
+                    <td>Whole number</td>
+                </tr>
+                <tr>
+                    <td>Float (<code>float</code>)</td>
+                    <td>9.5</td>
+                    <td>Decimal number</td>
+                </tr>
+            </table>
+
+            <p><b><code>type()</code></b> tells you what kind of data is stored in a variable.</p>
+        </section>
+
+        <!-- Input Function -->
+        <section class="card">
+            <h2>🗣️ The <code>input()</code> Function</h2>
+            <p><b><code>input()</code></b> allows your program to interact with people like a mini chatbot 🤖</p>
+
+            <pre><code>name = input("What is your name? ")
+print("Hello,", name)</code></pre>
+
+            <p><b>Note:</b> <code>input()</code> always returns text (<b>string</b>), even if you type a number.</p>
+
+            <h4>Example:</h4>
+            <pre><code>age = input("How old are you? ")
+print("You are", age, "years old.")</code></pre>
+
+            <p>Here, <code>age</code> is still a string. To do math with it, you must convert it to a number.</p>
+        </section>
+
+        <!-- Converting Input -->
+        <section class="card">
+            <h2>🔢 Converting Input to Numbers</h2>
+            <p>To convert text input into numbers:</p>
+            <ul>
+                <li><code>int()</code> → changes to integer (whole number)</li>
+                <li><code>float()</code> → changes to decimal number</li>
+            </ul>
+        </section>
+
+        <!-- Basic Math -->
+        <section class="card">
+            <h2>🧮 Basic Math in Python</h2>
+            <p>Python can do math like a calculator.</p>
+
+            <table>
+                <caption>Common Math Operators</caption>
+                <tr>
+                    <th>Operation</th>
+                    <th>Symbol</th>
+                    <th>Example</th>
+                    <th>Result</th>
+                </tr>
+                <tr><td>Addition</td><td>+</td><td>5 + 3</td><td>8</td></tr>
+                <tr><td>Subtraction</td><td>-</td><td>7 - 2</td><td>5</td></tr>
+                <tr><td>Multiplication</td><td>*</td><td>6 * 3</td><td>18</td></tr>
+                <tr><td>Division</td><td>/</td><td>8 / 3</td><td>2.666...</td></tr>
+                <tr><td>Power (Exponent)</td><td>**</td><td>2 ** 3</td><td>8</td></tr>
+                <tr><td>Remainder</td><td>%</td><td>7 % 3</td><td>1</td></tr>
+            </table>
+
+            <h4>Example:</h4>
+            <pre><code>a = 10
+b = 3
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print(a % b)</code></pre>
+
+            <h4>Output:</h4>
+            <pre><code>13
+7
+30
+3.3333333333
+1</code></pre>
+        </section>
+
+        <!-- If, Else, Elif -->
+        <section class="card">
+            <h2>🧠 Making Decisions — if, elif, else</h2>
+            <p>Now your program can <b>think</b> using conditions.</p>
+
+            <h4>Syntax:</h4>
+            <pre><code>if condition:
+    # do this
+else:
+    # do this instead</code></pre>
+
+            <h4>Example:</h4>
+            <pre><code>age = int(input("Enter your age: "))
+
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")</code></pre>
+
+            <h3>⚙️ Multiple Conditions with <code>elif</code></h3>
+            <pre><code>marks = int(input("Enter your marks: "))
+
+if marks >= 80:
+    print("Grade: A+")
+elif marks >= 70:
+    print("Grade: A")
+elif marks >= 60:
+    print("Grade: B")
+else:
+    print("Grade: Fail")</code></pre>
+
+            <p><b>💡 <code>elif</code></b> means “else if.”</p>
+
+            <div class="tips">
+                ✅ if, elif, else logic  
+                ✅ Comparing numbers and strings  
+                ✅ Using <code>.lower()</code> for flexible input  
+                ✅ Doing real math with variables  
+                ✅ Combining everything into one complete program  
+            </div>
+        </section>
+    </main>
+</body>
+</html>
