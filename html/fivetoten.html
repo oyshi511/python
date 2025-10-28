@@ -68,5 +68,52 @@ Output: ['apple', 'mango', 'cherry', 'orange']
 <h3> Using loops with lists</h3>
 <p>You can loop through all items automatically!</p>
     </div>
+    <div>
+        <h3>1. Adding items to a list</h3>
+        <p><b>You can add new elements using .append()</b></p>
+        <p>
+            friends = ["Ava", "Liam", "Noah"]
+            friends.append("Emma")
+            print(friends)
+            <br>
+            output:
+            ['Ava', 'Liam', 'Noah', 'Emma']
+        </p>
+
+        <h4> 2. Removing items</h4>
+        <p>Use .remove() or .pop()</p>
+        <p>
+            friends.remove("Liam")  # removes by name
+            print(friends)
+            
+            friends.pop()           # removes the last one
+            print(friends)
+        </p>
+        <h4> 3. Counting and sorting</h4>
+        <p>You can check the list length or alphabetically order items:</p>
+        <p>
+            print(len(friends))      # counts items
+            friends.sort()           # sorts alphabetically
+            print(friends)
+        </p>
+        <h4> 4. Making a list from user input</h4>
+        <p>
+            You can ask the user to type several items and build a list as they go!
+        </p>
+        <p>
+            items = []
+            for i in range(3):
+                item = input("Enter an item: ")
+                items.append(item)
+            print("Your list:", items)
+    </div>
+    <div>
+        <h3>Lesson 7- Function</h3>
+        <p><b>What is Function?</b></p>
+        <p>A <b>function</b>is a block of code that runs only when you call it.You can think of it like machine you put something in, it does its job, and gives you something back.</p>
+        <p>Example:
+            A blender doesn't run until you press the button. Same with a function it does't run until you call it.
+        </p>
+    </div>
 </body>
 </html>
